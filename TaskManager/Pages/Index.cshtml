@@ -1,0 +1,62 @@
+﻿@page
+@model TaskManager.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="hero">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-8">
+
+            <h1>Manage Your Tasks</h1>
+
+            <p>
+                A simple and professional web application to organize,
+                manage and track your daily tasks efficiently.
+            </p>
+
+            <a asp-page="/TaskItems/Index" class="btn btn-primary">
+                View Tasks
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="row g-4">
+
+    <div class="col-md-3">
+        <div class="stat-card">
+            <h5>Total Tasks</h5>
+            <h2>@Model.TotalTasks</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="stat-card">
+            <h5>Completed</h5>
+            <h2>@Model.DoneTasks</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="stat-card">
+            <h5>In Progress</h5>
+            <h2>@Model.InProgressTasks</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="stat-card">
+            <h5>New</h5>
+            <h2>@Model.NewTasks</h2>
+        </div>
+    </div>
+
+</div>
