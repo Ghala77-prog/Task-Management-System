@@ -36,6 +36,12 @@ Users can create new tasks, view task details, update existing tasks, search for
 
 ## 📸 Screenshots
 
+### 🔐 Login Page
+
+The Login page allows users to securely access the Task Management System.
+
+![Login Page](image/login.png)
+
 ### 🏠 Home / Dashboard
 
 The dashboard provides an overview of the user's tasks and displays the total number of tasks according to their status.
